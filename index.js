@@ -8,7 +8,6 @@ fal.config({
   credentials: process.env.Fal_Key
 });
 
-// Function to generate image using FAL API
 async function generateImage(prompt) {
   try {
     const result = await fal.subscribe("fal-ai/fast-lightning-sdxl", {
